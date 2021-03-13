@@ -37,8 +37,7 @@ export default class Galactic {
   }
 
   yearsLeftonEarth() {
-    // let yearsLeft = 100 - this.age;
-    // return yearsLeft;
-    return 0;
+    let yearsLeft = 100 - this.age;
+    return yearsLeft;
   }
 }
