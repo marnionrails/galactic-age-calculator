@@ -37,8 +37,17 @@ export default class Galactic {
   }
 
   yearsLeftonEarth() {
-    let yearsLeft = 100 - this.age;
-    return yearsLeft;
+    if (this.age <= 100) {
+      let yearsLeft = 100 - this.age;
+      return yearsLeft;
+    }
+    else if (this.age > 100) {
+      let yearsExceeded = this.age - 100;
+      return 0;
+    }
+    else {
+      return "Error";
+    }
   }
 
   yearsLeftonMercury() {
