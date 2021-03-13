@@ -74,7 +74,9 @@ export default class Galactic {
       return this.onVenus();
     }
     else if (this.age > 100) {
-      return 0;
+      this.age = this.age - 100;
+      let yearsExceeded = this.onVenus();
+      return `You surpassed the Venus life expectancy by ${yearsExceeded} years`;
     }
     else {
       return "Error";
