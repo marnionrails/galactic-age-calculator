@@ -46,4 +46,8 @@ export default class Galactic {
     this.age = yearsLeft;
     return this.onMercury();
   }
+
+  yearsLeftonVenus() {
+    return 0;
+  }
 }
