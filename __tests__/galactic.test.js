@@ -46,6 +46,6 @@ describe('Galactic', () => {
 
   test('should return years left on Mars', () => {
     const userAge = new Galactic(28)
-    expect(userAge.yearsLeftOnMars()).toEqual("38.2")
+    expect(userAge.yearsLeftOnMars()).toEqual("38.3")
   })
 });
