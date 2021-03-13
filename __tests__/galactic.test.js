@@ -23,4 +23,9 @@ describe('Galactic', () => {
     const userAge = new Galactic(28)
     expect(userAge.onMars()).toEqual("14.9")
   })
+
+  test('should return user age in Jupiter years', () => {
+    const userAge = new Galactic(28)
+    expect(userAge.onJupiter()).toEqual("2.3")
+  })
 });
