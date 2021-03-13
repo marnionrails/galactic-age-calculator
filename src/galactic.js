@@ -5,7 +5,11 @@ export default class Galactic {
   }
 
   isNumber () {
-    
+    for (const char of this.age) {
+      if (typeof char != "number") {
+        this.dialogue = "please enter a valid number for age";
+      }
+    }
     return this.dialogue;
   }
 }
