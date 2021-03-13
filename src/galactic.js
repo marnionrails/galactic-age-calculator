@@ -40,4 +40,8 @@ export default class Galactic {
     let yearsLeft = 100 - this.age;
     return yearsLeft;
   }
+
+  yearsLeftonMercury() {
+    return 0;
+  }
 }
