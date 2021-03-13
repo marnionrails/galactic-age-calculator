@@ -18,4 +18,9 @@ export default class Galactic {
     let mercuryAge = earthDays/88;
     return mercuryAge.toFixed(0);
   }
+
+  onVenus() {
+    
+    return 0;
+  }
 }
