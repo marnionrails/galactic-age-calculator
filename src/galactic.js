@@ -26,7 +26,8 @@ export default class Galactic {
   }
 
   onMars() {
-
-    return 0;
+    let earthDays = this.age * 365;
+    let marsAge = earthDays/687;
+    return marsAge.toFixed(1);
   }
 }
