@@ -57,8 +57,9 @@ export default class Galactic {
       return this.onMercury();
     }
     else if (this.age > 100) {
-      let yearsExceeded = this.age - 100;
-      return 0;
+      this.age = this.age - 100;
+      let yearsExceeded = this.onMercury();
+      return `You surpassed the Mercury life expectancy by ${yearsExceeded} years`;
     }
     else {
       return "Error";
