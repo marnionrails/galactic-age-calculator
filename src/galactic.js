@@ -85,9 +85,17 @@ export default class Galactic {
   }
 
   yearsLeftOnMars() {
-    let yearsLeft = this.yearsLeftonEarth();
-    this.age = yearsLeft;
-    return this.onMars();
+    if (this.age <= 100) {
+      let yearsLeft = this.yearsLeftonEarth();
+      this.age = yearsLeft;
+      return this.onMars();
+    }
+    else if (this.age > 100) {
+      return 0;
+    }
+    else {
+      return "Error";
+    }
   }
 
   yearsLeftonJupiter() {
