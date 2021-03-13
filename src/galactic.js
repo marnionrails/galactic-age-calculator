@@ -48,6 +48,8 @@ export default class Galactic {
   }
 
   yearsLeftonVenus() {
-    return 0;
+    let yearsLeft = this.yearsLeftonEarth();
+    this.age = yearsLeft;
+    return this.onVenus();
   }
 }
