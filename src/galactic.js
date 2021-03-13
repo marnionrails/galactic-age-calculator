@@ -60,6 +60,8 @@ export default class Galactic {
   }
 
   yearsLeftonJupiter() {
-    return 0;
+    let yearsLeft = this.yearsLeftonEarth();
+    this.age = yearsLeft;
+    return this.onJupiter();
   }
 }
