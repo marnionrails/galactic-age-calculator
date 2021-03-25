@@ -1,7 +1,7 @@
 # Galactic Age Calculator
-Created by **Marni Sucher**, 3.25.2021
 
 #### App used to calculate age on different planets, demonstrating testing through usage of Jest
+Created by **Marni Sucher**, 3.25.2021
 
 ## Technologies Used
 
@@ -12,7 +12,7 @@ Created by **Marni Sucher**, 3.25.2021
 
 ## Description
 
-This application will request the users age on Earth. It will use the input to determine the users age on Mercury, Venus, Mars and Jupiter and determine their estimated time left to live on each planet.
+This application will request the user's age on Earth. It will use the input to determine the user's age on Mercury, Venus, Mars and Jupiter and determine their estimated time left to live on each planet.
 
 ## Setup/Installation Requirements
 
