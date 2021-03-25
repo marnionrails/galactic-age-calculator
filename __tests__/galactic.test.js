@@ -2,14 +2,14 @@ import Galactic from './../src/galactic.js';
 
 describe('Galactic', () => {
     
-    test('should return a string asking for a number, given any other type of input is entered', () => {
+  test('should return a string asking for a number, given any other type of input is entered', () => {
     const userAge = new Galactic("Marni");
     userAge.isNumber();
     const result = userAge.dialogue;
     expect(result).toEqual("please enter a valid number for age");
   });
 
-    test('should return user age in Mercury years', () => {
+  test('should return user age in Mercury years', () => {
     const userAge = new Galactic(28)
     expect(userAge.onMercury()).toEqual("116.1")
   });
@@ -77,5 +77,30 @@ describe('Galactic', () => {
   test('should return years exceeded on Jupiter if user surpasses life expectancy', () => {
     const userAge = new Galactic(104)
     expect(userAge.yearsLeftonJupiter()).toEqual("You surpassed the Jupiter life expectancy by 0.3 years")
+  })
+
+  test('should return error if user enters anything that is not a number for age on Jupiter', () => {
+    const userAge = new Galactic("A")
+    expect(userAge.yearsLeftonJupiter()).toEqual("Error")
+  })
+
+  test('should return error if user enters anything that is not a number for age of Mars', () => {
+    const userAge = new Galactic("A")
+    expect(userAge.yearsLeftOnMars()).toEqual("Error")
+  })
+
+    test('should return error if user enters anything that is not a number for age of Venus', () => {
+    const userAge = new Galactic("A")
+    expect(userAge.yearsLeftonVenus()).toEqual("Error")
+  })
+
+    test('should return error if user enters anythng that is not a number for age on Mercury', () => {
+    const userAge = new Galactic("A")
+    expect(userAge.yearsLeftonMercury()).toEqual("Error")
+  })
+
+    test('should return error if user enters anything that is not a number for age on Earth', () => {
+    const userAge = new Galactic("A")
+    expect(userAge.yearsLeftonEarth()).toEqual("Error")
   })
 });
