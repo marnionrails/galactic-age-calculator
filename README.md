@@ -1,7 +1,7 @@
 # Galactic Age Calculator
 Created by **Marni Sucher**, 3.25.2021
 
-## App used to calculate age on different planets, demonstrating testing through usage of Jest
+#### App used to calculate age on different planets, demonstrating testing through usage of Jest
 
 ## Technologies Used
 
@@ -23,7 +23,7 @@ This application will request the users age on Earth. It will use the input to d
 Users/{YOUR_USER_NAME}/Desktop/galactic-age-calculator $ npm install
 Users/{YOUR_USER_NAME}/Desktop/galactic-age-calculator $ npm run start
 
-## KNown Bugs
+## Known Bugs
 * None at this time
 
 ## License
